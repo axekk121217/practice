@@ -1,0 +1,341 @@
+* {
+  box-sizing: border-box;
+}
+body{
+  margin: 0px;
+}
+
+/* 漢堡 */
+label.hamburger{
+  /* border: 1px solid blue; */
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-around;
+  width: 40px;
+  height: 30px;
+  position: absolute;
+  top: 20px;
+  right: 25px;
+  z-index: 50;
+}
+
+label.hamburger > div.a{
+  /* border: 1px solid white; */
+  background-color: white;
+  height: 4.5px;
+  width: 50px;
+  border-radius: 5px;
+}
+
+label.hamburger > div.b{
+  /* border: 1px solid white; */
+  background-color: white;
+  height: 4.5px;
+  width: 50px;
+  border-radius: 5px;
+}
+
+label.hamburger > div.c{
+  /* border: 1px solid white; */
+  background-color: white;
+  height: 4.5px;
+  width: 50px;
+  border-radius: 5px;
+}
+
+div.MENU_ICON{
+  color: white;
+  position: absolute;
+  top: 4px;
+  right: 50px;
+  font-size: 20px;
+}
+
+input#menu_7{
+  display: none;
+}
+
+
+/* 內容 */
+div.empty{
+  /* border: 1px solid blue; */
+  width: 1280px;
+  height: 1500px;
+  overflow: hidden;
+  position: relative;
+  background-color: #898989;
+  border-bottom: 1px solid #606060;
+}
+
+div.banner_up{
+  background-color: #FFD84ECC;
+  /* border: 1px solid black; */
+  width: 700px;
+  height: 180px;
+  position: absolute;
+  top: 100px;
+  left: 140px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap;
+  z-index: 3;
+}
+
+div.go_into_action{
+  color: white;
+  font-size: 3rem;
+  transform: translateY(-25%);
+}
+
+div.w_line_one{
+  background-color: white;
+  width: 550px;
+  height: 5px;
+  position: absolute;
+  top: 120px;
+  right: 75px;
+}
+
+div.div_img_a{
+  /* border: 1px solid blue; */
+  width: 1000px;
+  height: 450px;
+  margin: 0 auto;;
+  position: relative;
+  top: 280px;
+  overflow: hidden;
+  z-index: 2;
+}
+
+div.img_a{
+  width: 100%;
+}
+
+div.text{
+  /* border: 1px solid green; */
+  width: 1000px;
+  margin: 0 auto;
+  position: relative;
+  top: 350px;
+  font-size: 20px;
+  line-height: 35px;
+  color: white;
+  z-index: 2;
+}
+
+div.text_two{
+  /* border: 1px solid green; */
+  width: 1000px;
+  margin: 0 auto;
+  position: relative;
+  top: 400px;
+  font-size: 20px;
+  line-height: 35px;
+  color: white;
+  z-index: 2;
+}
+
+div.div_img_b{
+  width: 1000px;
+  height: 300px;
+  margin: 0 auto;
+  position: relative;
+  top: 500px;
+  z-index: 2;
+}
+
+div.aaa{
+  background-color: #464646;
+  width: 1280px;
+  height: 500px;
+  position: absolute;
+  bottom: 300px;
+  z-index: 1;
+}
+
+
+
+
+
+
+
+
+
+/* footer */
+div.footer{
+  /* border: 1px solid blue; */
+  width: 1280px;
+  background-color: #898989;
+  height: 700px;
+  position: relative;
+}
+
+div.fill_in{
+  border-right: 1px solid #606060;
+  width: 60%;
+  height: 500px;
+  position: relative;
+}
+label.a_name, label.b_email, label.mess{
+  color: white;
+  font-weight: 600;
+}
+
+div.left_up input, div.right_up input{
+  width: 300px;
+  height: 35px;
+  margin-top: 10px;
+}
+
+div.message_bottom textarea{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+div.left_up{
+  /* border: 1px solid blue; */
+  position: absolute;
+  top: 50px;
+  left: 70px;
+}
+
+div.right_up{
+  /* border: 1px solid blue; */
+  position: absolute;
+  top: 50px;
+  left: 400px;
+}
+
+div.message_bottom{
+  /* border: 1px solid blue; */
+  position: absolute;
+  top:140px;
+  left:70px;
+}
+
+div.message_bottom input.bottom{
+  background-color: #FFFFFF;
+  box-shadow: none;
+  border: none;
+  color: #9b9ea4;
+  font-weight: 600;
+  width: 150px;
+  height: 30px;
+}
+
+div.other{
+  border: 1px solid #606060;
+  width: 100%;
+  height: 200px;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+a.fb{
+position: relative;
+left: 100px;
+}
+
+a.ig{
+  position: relative;
+  left: 120px;
+}
+
+a.app_store{
+  position: relative;
+  top: 5px;
+  left: 160px;
+}
+
+a.google_play{
+  position: relative;
+  top: 5px;
+  left: 180px;
+}
+
+div.gia{
+  position: relative;
+  left: 240px;
+  top: -5px;
+  font-size: 10px;
+}
+
+div.TibaMe{
+  position: relative;
+  top: 15px;
+  left: 160px;
+  font-size: 10px;
+}
+
+div.reference{
+  position: relative;
+  top: -18px;
+  left: 733px;
+  font-size: 10px;
+}
+
+div.email{
+  border-bottom: 1px solid #606060;
+  width: 40%;
+  height: 166.6px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+div.email_a{
+  width: 100%;
+  height: 100%;
+  /* border: 1px solid red; */
+  position: relative;
+}
+
+div.email_a img, div.phone_a img, div.address_a img{
+  position: absolute;
+  top: 30px;
+  left: 50px;
+}
+
+div.email_a span, div.phone_a span, div.address_a span{
+  font-size: 28px;
+  font-weight: 600;
+  color: white;
+  position: absolute;
+  top: 50px;
+  left: 120px;
+}
+
+div.phone{
+  border-bottom: 1px solid #606060;
+  width: 40%;
+  height: 166.6px;
+  position: absolute;
+  top: 166.6px;
+  right: 0;
+}
+
+div.phone_a{
+  width: 100%;
+  height: 100%;
+  /* border: 1px solid red; */
+  position: relative;
+}
+
+div.address{
+  /* border-bottom: 1px solid #606060; */
+  width: 40%;
+  height: 166.6px;
+  position: absolute;
+  top: 333.3px;
+  right: 0;
+}
+
+div.address_a{
+  width: 100%;
+  height: 100%;
+  /* border: 1px solid red; */
+  position: relative;
+}
