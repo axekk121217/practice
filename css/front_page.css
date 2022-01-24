@@ -56,6 +56,11 @@ div.while_line{
   width: 80%;
   margin: 0 auto;
 }
+@media screen and (max-width: 576px){
+  div.while_line{
+    width: 95%;
+  }
+}
 
 div.container{
   /* border: 1px solid blue; */
@@ -185,7 +190,7 @@ ul.menu li a{
 ul.menu li a:hover{
   color: #606060;
   text-decoration-color: #606060;
-  font-size: 21px;
+  /* font-size: 21px; */
 }
 
 #ha:checked ~ ul.menu{
@@ -238,7 +243,7 @@ ul.menu li a:hover{
   span.relaxe{
     display: block;
     margin-bottom: 10px;
-    }
+  }
 
   a.browse{
     /* margin-left: 145px; */
@@ -261,6 +266,15 @@ ul.menu li a:hover{
 
   a.browse{
     margin: 0 auto;
+  }
+}
+@media screen and (max-width: 450px){
+  div.deep_breathing{
+    font-size: 30px;
+  }
+
+  span.relaxe{
+    font-size: 15px;
   }
 }
 
@@ -298,7 +312,6 @@ div.s4{
   font-size: 0;
 }
 
-
 div.two_right_black{
   font-size: 16px;
   background-color: hsla(0, 0%, 0%, .5);
@@ -313,6 +326,7 @@ div.two_right_black{
 }
 
 div.umd{
+  /* border: 1px solid red; */
   width: 35%;
   height: 100%;
   position: absolute;
@@ -321,7 +335,9 @@ div.umd{
   background: #FFD84EE6;
 }
 
+
 div.up{
+  /* border: 1px solid red; */
   color: white;
   font-size: 2rem;
   padding-top: 200px;
@@ -467,21 +483,49 @@ div.ore{
   }
 }
 
+.s11{
+  display: none;
+}
+
 
 @media screen and (max-width: 576px){
   div.s4{
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     width: 100%;
   }
 
   div.two_right_black{
     font-size: 15px;
+
   }
 }
 
 @media screen and (max-width: 540px){
   div.two_right_black{
-    font-size: 13px;
+    font-size: 16px;
+    overflow: hidden;
+  }
+
+  .s0{
+    /* border: 1px solid red; */
+    width: 50%;
+    margin: 0 auto;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 8;
+    -webkit-box-orient: vertical;
+  }
+
+  .s1{
+    display: inline-block;
+  }
+
+  .s2s, .bb1, .s0 br{
+   display: none;
+  }
+
+  .s0{
+    padding-top: 50px;
   }
 
   div.umd{
@@ -516,6 +560,60 @@ div.ore{
     font-size: 28px;
   }
 }
+
+@media screen and (max-width: 490px){
+  .s0{
+    padding-top: 30px;
+  }
+}
+
+@media screen and (max-width: 450px){
+  .s0{
+    display: none;
+  }
+
+  div.umd{
+    width: 50%;
+    height: 20%;
+    position: absolute;
+    top: 50px;
+    left: 0px;
+  }
+
+  div.up{
+    position: absolute;
+    top: 32px;
+    left: 35px;
+  }
+
+  div.down{
+    font-size: 25px;
+    position: absolute;
+    top: 70px;
+    left: 85px;
+  }
+}
+@media screen and (max-width: 430px){
+  div.up{
+    top: 28px;
+  }
+
+  div.down{
+    left: 68px;
+  }
+}
+
+@media screen and (max-width: 400px){
+  div.up{
+    top: 26px;
+  }
+
+  div.down{
+    left: 50px;
+  }
+}
+
+
 
 
 
@@ -1068,9 +1166,14 @@ div.aside{
 }
 
 div.email_a span, div.phone_a span, div.address_a span{
-  font-size: 28px;
+  font-size: 25px;
   font-weight: 600;
   color: white;
+}
+@media screen and (max-width: 768px){
+  div.email_a span, div.phone_a span, div.address_a span{
+    font-size: 20px;
+  }
 }
 
 div.email, div.phone{
@@ -1079,6 +1182,10 @@ div.email, div.phone{
   height: 33.3%;
   position: relative;
   /* border: 1px solid blue; */
+}
+
+.phone span, .email span{
+  margin-left: 5px;
 }
 
 div.address{
@@ -1095,11 +1202,6 @@ div.address{
   top: 0;
   width: 100vh;
 } */
-@media screen and (max-width: 768px){
-  div.email, div.phone, div.address{
-    /* padding-top: 20%; */
-  }
-}
 
 
 div.email_a, div.phone_a, div.address_a{

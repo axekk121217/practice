@@ -214,9 +214,9 @@ div.go_into_action{
     font-size: 2rem;
   }
 }
-@media screen and (max-width: 850px){
+@media screen and (max-width: 500px){
   div.go_into_action{
-    /* font-size: 1.7rem; */
+    font-size: 1.7rem;
   }
 }
 
@@ -234,6 +234,11 @@ div.w_line_one{
   width: 80%;
   height: 5px;
   margin-top: 15px;
+}
+@media screen and (max-width: 500px){
+  div.w_line_one{
+    width: 100%;
+  }
 }
 
 div.banner_bottom{     /* 最新消息 */
@@ -257,6 +262,11 @@ div.w_line_two{
   transform: translateY(20%) rotate(30deg);
   display: inline-block;
   margin: 0 30PX;
+}
+@media screen and (max-width: 430px){
+  div.w_line_two{
+    display: none;
+  }
 }
 
 div.span_two{
@@ -310,6 +320,18 @@ div.Promotion{
   display: inline-block;
 }
 
+@media screen and (max-width: 430px){
+  div.Promotion, div.Related{
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  div.prr{
+    padding: 70px 0 70px 0;
+  }
+}
+
 div.Recent{
   display: inline-block;
   margin: 0 100px;
@@ -327,6 +349,15 @@ div.Recent{
 @media screen and (max-width: 600px){
   div.Recent{
     margin: 0 20px;
+  }
+}
+
+@media screen and (max-width: 430px){
+  div.Recent{
+    /* border: 1px solid red; */
+    margin: 20px auto;
+    display: block;
+    width: 90%;
   }
 }
 
@@ -378,6 +409,7 @@ div.right_a{
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   line-height: 50px;
   position: relative;
 }
@@ -406,6 +438,21 @@ div.aa{
 @media screen and (max-width: 576px){
   div.aa{
     font-size: 18px;
+  }
+}
+@media screen and (max-width: 500px){
+  div.aa{
+    bottom: 15px;
+    left: 0;
+    color: black;
+  }
+
+  .w_line_third{
+    width: 100%;
+    /* border: 1px solid red; */
+    height: 35px;
+    line-height: 0px;
+    background-color: #ffffff99;
   }
 }
 
@@ -532,9 +579,14 @@ div.aside{
 }
 
 div.email_a span, div.phone_a span, div.address_a span{
-  font-size: 28px;
+  font-size: 25px;
   font-weight: 600;
   color: white;
+}
+@media screen and (max-width: 768px){
+  div.email_a span, div.phone_a span, div.address_a span{
+    font-size: 20px;
+  }
 }
 
 div.email, div.phone{
@@ -578,6 +630,9 @@ div.email_a, div.phone_a, div.address_a{
   }
 }
 
+.phone span, .email span{
+  margin-left: 5px;
+}
 
 
 /* =============== 第六欄 下 =============== */
